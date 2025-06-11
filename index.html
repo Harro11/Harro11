@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UNBLOCKED GAMES</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #121212;
+      color: #f0f0f0;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar */
+    header {
+      background: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      color: #00d8ff;
+      font-weight: 700;
+      letter-spacing: 2px;
+      cursor: default;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00d8ff;
+    }
+
+    /* Hero section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1529516541483-1c7c44e1b5a3?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    .hero-content {
+      background: rgba(0,0,0,0.65);
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      max-width: 800px;
+    }
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #00d8ff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    .hero-content p {
+      font-size: 1.25rem;
+      color: #ddd;
+    }
+    .hero-content button {
+      margin-top: 2rem;
+      background: #00d8ff;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #121212;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .hero-content button:hover {
+      background: #008dbf;
+      color: #fff;
+    }
+
+    /* Games section */
+    main {
+      flex: 1;
+      background: #181818;
+      padding: 3rem 2rem;
+    }
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .game-card {
+      background: #222;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+    .game-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+    .game-card-content {
+      padding: 1rem 1.2rem;
+    }
+    .game-card-content h3 {
+      color: #00d8ff;
+      margin-bottom: 0.5rem;
+    }
+    .game-card-content p {
+      color: #bbb;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .game-card-content a {
+      background: #00d8ff;
+      color: #121212;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .game-card-content a:hover {
+      background: #008dbf;
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      background: #1f1f1f;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #333;
+      margin-top: auto;
+    }
+
+    /* Responsive adjustments */
+    @media(max-width: 600px) {
+      .hero-content h2 {
+        font-size: 2rem;
+      }
+      .hero-content p {
+        font-size: 1rem;
+      }
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>UNBLOCKED GAMES</h1>
+  <nav>
+    <a href="#games">Games</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Play Your Favorite Games Anywhere, Anytime</h2>
+    <p>Discover a wide selection of unblocked games you can enjoy at school or work without restrictions.</p>
+    <button onclick="document.getElementById('games').scrollIntoView({ behavior: 'smooth' })">Browse Games</button>
+  </div>
+</section>
+
+<main>
+  <section id="games" class="games-grid">
+    <article class="game-card">
+      <img src="https://img.icons8.com/color/480/000000/arcade-game-controller.png" alt="Game 1" />
+      <div class="game-card-content">
+        <h3>Pixel Racer</h3>
+        <p>A fast-paced retro racing game where you dodge obstacles and compete for the top spot.</p>
+        <a href="#" target="_blank" rel="noopener">Play Now</a>
+      </div>
+    </article>
+
+    <article class="game-card">
+      <img src="https://img.icons8.com/color/480/000000/space-invaders.png" alt="Game 2" />
+      <div class="game-card-content">
+        <h3>Alien Invaders</h3>
+        <p>Defend Earth from alien waves in this classic space shooter.</p>
+        <a href="#" target="_blank" rel="noopener">Play Now</a>
+      </div>
+    </article>
+
+    <article class="game-card">
+      <img src="https://img.icons8.com/color/480/000000/lego.png" alt="Game 3" />
+      <div class="game-card-content">
+        <h3>Block Builder</h3>
+        <p>Get creative and build amazing worlds with limitless blocks and tools.</p>
+        <a href="#" target="_blank" rel="noopener">Play Now</a>
+      </div>
+    </article>
+
+    <article class="game-card">
+      <img src="https://img.icons8.com/color/480/000000/soccer-ball--v1.png" alt="Game 4" />
+      <div class="game-card-content">
+        <h3>Soccer Stars</h3>
+        <p>Compete in quick soccer matches and score amazing goals.</p>
+        <a href="#" target="_blank" rel="noopener">Play Now</a>
+      </div>
+    </article>
+  </section>
+
+  <section id="about" style="max-width: 900px; margin: 4rem auto 2rem auto; padding: 0 1rem;">
+    <h2 style="color:#00d8ff; margin-bottom: 1rem;">About UNBLOCKED GAMES</h2>
+    <p style="color:#ccc; font-size:1.1rem; line-height:1.8;">
+      UNBLOCKED GAMES is your go-to platform for free, fun, and safe games accessible anywhere. We focus on providing a variety of games that work even on restricted networks, perfect for students and casual gamers alike. Our mission is to keep gaming fun and accessible without the hassle of blocks or firewalls.
+    </p>
+  </section>
+
+  <section id="contact" style="max-width: 900px; margin: 2rem auto 4rem auto; padding: 0 1rem;">
+    <h2 style="color:#00d8ff; margin-bottom: 1rem;">Contact Us</h2>
+    <p style="color:#ccc; font-size:1.1rem; line-height:1.8;">
+      Got questions or suggestions? Reach out at <a href="mailto:support@unblockedgames.com" style="color:#00d8ff; text-decoration:none;">support@unblockedgames.com</a>.
+    </p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 UNBLOCKED GAMES. All rights reserved.
+</footer>
+
+</body>
+</html>
